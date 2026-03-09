@@ -29,78 +29,58 @@ export default function Services() {
                     Áreas de atuação
                 </motion.h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
-                    {/* Atuação Box 1 */}
-                    <motion.div
-                        variants={itemVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.1 }}
-                        className="bg-white p-6 md:p-8 rounded-3xl shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-stone-100 flex flex-col items-center text-center group hover:border-gold/30 transition-all duration-500 hover:-translate-y-2"
-                    >
-                        <div className="w-16 h-16 bg-cream rounded-2xl flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform duration-500">
-                            <Brain size={32} strokeWidth={1} />
-                        </div>
-                        <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Avaliação Neuropsicológica</h3>
-                        <p className="font-sans text-dark/70 leading-relaxed text-sm">
-                            Investigação aprofundada para mapear perfis cognitivos, funções executivas e identificar transtornos de aprendizagem ou suspeitas neurológicas.
-                        </p>
-                    </motion.div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 relative z-10">
+                    {[
+                        {
+                            title: "Avaliação Neuropsicológica",
+                            description: "Investigação aprofundada para mapear perfis cognitivos, funções executivas e identificar transtornos de aprendizagem ou suspeitas neurológicas.",
+                            icon: Brain,
+                            delay: 0.1
+                        },
+                        {
+                            title: "Reabilitação Neuropsicológica",
+                            description: "Programas personalizados para recuperar ou adaptar funções cognitivas e melhorar a qualidade de vida.",
+                            icon: Sparkles,
+                            delay: 0.2
+                        },
+                        {
+                            title: "Psicoterapia",
+                            description: "Atendimento clínico para crianças, adolescentes e adultos, focado na saúde emocional e no manejo clínico de quadros como esquizofrenia e dependência química.",
+                            icon: Users,
+                            delay: 0.3
+                        },
+                        {
+                            title: "Orientação Parental & ABA",
+                            description: "Capacitação estruturada para pais. Utilizamos a metodologia ABA (padrão-ouro no Transtorno do Espectro Autista) para potencializar o desenvolvimento infantil no ambiente doméstico.",
+                            icon: HeartHandshake,
+                            delay: 0.4
+                        }
+                    ].map((service, index) => (
+                        <motion.div
+                            key={index}
+                            variants={itemVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: service.delay }}
+                            className="relative group transition-all duration-500 hover:-translate-y-2 flex flex-col"
+                        >
+                            {/* Lifted Shadow Effect para os cards */}
+                            <div className="absolute -bottom-1 left-0 w-[30%] h-4 bg-black/15 blur-lg -rotate-[4deg] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
+                            <div className="absolute -bottom-1 right-0 w-[30%] h-4 bg-black/15 blur-lg rotate-[4deg] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
 
-                    {/* Atuação Box 2 */}
-                    <motion.div
-                        variants={itemVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                        className="bg-white p-8 rounded-3xl shadow-[0_15px_40_rgba(0,0,0,0.04)] border border-stone-100 flex flex-col items-center text-center group hover:border-gold/30 transition-all duration-500 hover:-translate-y-2"
-                    >
-                        <div className="w-16 h-16 bg-cream rounded-2xl flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform duration-500">
-                            <Sparkles size={32} strokeWidth={1} />
-                        </div>
-                        <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Reabilitação Neuropsicológica</h3>
-                        <p className="font-sans text-dark/60 leading-relaxed text-sm">
-                            Programas personalizados para recuperar ou adaptar funções cognitivas e melhorar a qualidade de vida.
-                        </p>
-                    </motion.div>
-
-                    {/* Atuação Box 3 */}
-                    <motion.div
-                        variants={itemVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.3 }}
-                        className="bg-white p-6 md:p-8 rounded-3xl shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-stone-100 flex flex-col items-center text-center group hover:border-gold/30 transition-all duration-500 hover:-translate-y-2"
-                    >
-                        <div className="w-16 h-16 bg-cream rounded-2xl flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform duration-500">
-                            <Users size={32} strokeWidth={1} />
-                        </div>
-                        <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Psicoterapia</h3>
-                        <p className="font-sans text-dark/70 leading-relaxed text-sm">
-                            Atendimento clínico para crianças, adolescentes e adultos, focado na saúde emocional e no manejo clínico de quadros como esquizofrenia e dependência química.
-                        </p>
-                    </motion.div>
-
-                    {/* Atuação Box 4 */}
-                    <motion.div
-                        variants={itemVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.4 }}
-                        className="bg-white p-6 md:p-8 rounded-3xl shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-stone-100 flex flex-col items-center text-center group hover:border-gold/30 transition-all duration-500 hover:-translate-y-2"
-                    >
-                        <div className="w-16 h-16 bg-cream rounded-2xl flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform duration-500">
-                            <HeartHandshake size={32} strokeWidth={1} />
-                        </div>
-                        <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Orientação Parental & ABA</h3>
-                        <p className="font-sans text-dark/70 leading-relaxed text-sm">
-                            Capacitação estruturada para pais. Utilizamos a metodologia ABA (padrão-ouro no Transtorno do Espectro Autista) para potencializar o desenvolvimento infantil no ambiente doméstico.
-                        </p>
-                    </motion.div>
+                            {/* Card Content */}
+                            <div className="bg-white p-6 md:p-8 border border-stone-100 flex flex-col items-center text-center flex-grow z-10 shadow-[0_10px_30px_rgba(0,0,0,0.02)] group-hover:border-gold/30">
+                                <div className="w-16 h-16 bg-cream flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform duration-500">
+                                    <service.icon size={32} strokeWidth={1} />
+                                </div>
+                                <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">{service.title}</h3>
+                                <p className="font-sans text-dark/70 leading-relaxed text-sm">
+                                    {service.description}
+                                </p>
+                            </div>
+                        </motion.div>
+                    ))}
                 </div>
             </div>
         </section>
