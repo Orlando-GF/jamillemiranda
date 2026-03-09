@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section id="inicio" className="relative w-full min-h-[90dvh] md:min-h-[95dvh] flex flex-col justify-start md:justify-center overflow-visible mb-16 md:mb-24">
             {/* Background Image Layer (The Floating Card - Straight Edges) */}
-            <div className="absolute inset-0 z-0 overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] bg-background">
+            <div className="absolute inset-0 z-0 overflow-hidden shadow-[0_40px_80px_-15px_rgba(0,0,0,0.45),0_15px_25px_-5px_rgba(0,0,0,0.65)] bg-background">
                 <div
                     className="absolute inset-0 bg-cover bg-[position:65%_top] sm:bg-[position:75%_top] md:bg-[position:80%_top] lg:bg-[position:90%_top] xl:bg-right-top bg-no-repeat bg-[url('/img/hero_mobile.webp')] lg:bg-[url('/img/hero.webp')]"
                     aria-hidden="true"
