@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 export default function Hero() {
     return (
         <section id="inicio" className="relative w-full min-h-[90dvh] md:min-h-[95dvh] flex flex-col justify-start md:justify-center overflow-visible mb-16 md:mb-24">
-            {/* Lifted Shadow Effect: Duas sombras distintas nas extremidades, centro limpo */}
-            {/* Sombra Esquerda: Começa no canto e rotaciona para baixo */}
-            <div className="absolute bottom-[10px] left-1 w-[35%] h-8 bg-black/30 blur-xl -rotate-[3deg] z-0" />
+            {/* Lifted Shadow Effect: Sombras mais nítidas e curtas nas extremidades, centro totalmente limpo */}
+            {/* Sombra Esquerda: Começa para fora da borda e rotaciona para dentro/baixo */}
+            <div className="absolute bottom-1 left-[-4px] w-[20%] h-10 bg-black/40 blur-lg -rotate-[5deg] z-0" />
 
-            {/* Sombra Direita: Começa no canto e rotaciona para baixo */}
-            <div className="absolute bottom-[10px] right-1 w-[35%] h-8 bg-black/30 blur-xl rotate-[3deg] z-0" />
+            {/* Sombra Direita: Começa para fora da borda e rotaciona para dentro/baixo */}
+            <div className="absolute bottom-1 right-[-4px] w-[20%] h-10 bg-black/40 blur-lg rotate-[5deg] z-0" />
 
             {/* Background Image Layer (The Floating Card - Straight Edges) */}
             <div className="absolute inset-x-0 top-0 bottom-8 z-10 overflow-hidden bg-background">
