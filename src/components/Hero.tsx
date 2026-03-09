@@ -5,12 +5,15 @@ import { motion } from "framer-motion";
 export default function Hero() {
     return (
         <section id="inicio" className="relative w-full min-h-[90dvh] md:min-h-[95dvh] flex flex-col justify-start md:justify-center overflow-visible mb-16 md:mb-24">
-            {/* Sombras de Canto (Lifted Corners Effect) - Suaves e concentradas nas laterais */}
-            <div className="absolute bottom-2 left-[4%] w-[30%] h-6 bg-black/25 blur-2xl -rotate-3 z-0" />
-            <div className="absolute bottom-2 right-[4%] w-[30%] h-6 bg-black/25 blur-2xl rotate-3 z-0" />
+            {/* Lifted Shadow Effect: Duas sombras distintas nas extremidades, centro limpo */}
+            {/* Sombra Esquerda: Começa no canto e rotaciona para baixo */}
+            <div className="absolute bottom-[10px] left-1 w-[35%] h-8 bg-black/30 blur-xl -rotate-[3deg] z-0" />
+
+            {/* Sombra Direita: Começa no canto e rotaciona para baixo */}
+            <div className="absolute bottom-[10px] right-1 w-[35%] h-8 bg-black/30 blur-xl rotate-[3deg] z-0" />
 
             {/* Background Image Layer (The Floating Card - Straight Edges) */}
-            <div className="absolute inset-x-0 top-0 bottom-6 z-10 overflow-hidden bg-background">
+            <div className="absolute inset-x-0 top-0 bottom-8 z-10 overflow-hidden bg-background">
                 <div
                     className="absolute inset-0 bg-cover bg-[position:65%_top] sm:bg-[position:75%_top] md:bg-[position:80%_top] lg:bg-[position:90%_top] xl:bg-right-top bg-no-repeat bg-[url('/img/hero_mobile.webp')] lg:bg-[url('/img/hero.webp')]"
                     aria-hidden="true"
