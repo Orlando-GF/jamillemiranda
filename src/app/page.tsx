@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import FloatingCards from "@/components/FloatingCards";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Contact from "@/components/Contact";

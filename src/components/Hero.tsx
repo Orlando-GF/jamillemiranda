@@ -42,6 +42,7 @@ export default function Hero() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         href="#contato"
+                        aria-label="Agendar uma consulta com Jamille Miranda"
                         className="relative overflow-hidden group inline-flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-gold to-[#a98144] hover:from-[#a98144] hover:to-[#8c6732] text-white font-sans font-bold px-5 py-3.5 md:px-8 md:py-4 rounded-full shadow-2xl shadow-gold/30 transition-all border border-white/20 uppercase tracking-wider md:tracking-widest whitespace-nowrap text-[13px] sm:text-sm mt-auto w-full md:w-auto"
                     >
                         {/* Shimmer Effect */}
