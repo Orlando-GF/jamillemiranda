@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-bodoni), serif;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-bodoni: var(--font-bodoni), serif;
+
+  --color-gold: #B18F51;
+  --color-gold-hover: #9c7b41;
+  --color-dark: #372A12;
+  --color-brown: #665030;
+  --color-cream: #F5EFE6;
+  --color-background: #ffffff;
+  --color-foreground: #372A12;
+
+  --animate-shimmer: shimmer 2s infinite linear;
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #372A12;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@layer base {
+  h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+}
+
+label {
+  @apply text-base font-medium text-dark/80 mb-2;
+}
+
+input:focus,
+textarea:focus {
+  @apply ring-2 ring-gold/30 border-gold outline-none transition-shadow;
+}
+
+.glass-panel {
+  @apply bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-gold/20;
+}
