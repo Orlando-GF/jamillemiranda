@@ -20,10 +20,10 @@ export default function Navbar() {
             transition={{ duration: 0.8 }}
             className="absolute top-0 w-full z-50 bg-dark/50 backdrop-blur-md border-b border-dark/30"
         >
-            <div className="px-6 py-1.5 md:px-10 md:py-2 flex flex-row justify-between items-center max-w-7xl mx-auto w-full">
+            <div className="px-6 py-4 md:px-10 md:py-5 flex flex-row justify-between items-center max-w-7xl mx-auto w-full">
                 <div className="flex flex-col group cursor-pointer whitespace-nowrap flex-shrink-0">
-                    <span className="font-serif text-xl sm:text-2xl lg:text-3xl tracking-[0.1em] sm:tracking-[0.15em] text-white uppercase leading-normal drop-shadow-sm">Jamille Miranda</span>
-                    <span className="font-sans text-[7px] sm:text-[8px] lg:text-[10px] tracking-[0.3em] sm:tracking-[0.4em] text-white/70 uppercase ml-1 drop-shadow-sm">Neuropsicóloga</span>
+                    <span className="font-serif text-xl sm:text-2xl lg:text-3xl tracking-[0.1em] sm:tracking-[0.15em] text-white uppercase leading-none drop-shadow-sm mb-1">Jamille Miranda</span>
+                    <span className="font-sans text-[8px] sm:text-[9px] lg:text-[10px] tracking-[0.3em] sm:tracking-[0.4em] text-white/70 uppercase ml-1 drop-shadow-sm">Neuropsicóloga</span>
                 </div>
 
                 <div className="hidden md:flex flex-row items-center gap-4 lg:gap-8 flex-shrink-0">
@@ -42,10 +42,10 @@ export default function Navbar() {
                 {/* Mobile Menu Button */}
                 <button
                     onClick={() => setIsOpen(true)}
-                    className={`md:hidden p-2 -mr-2 transition-opacity ${isOpen ? 'opacity-0' : 'text-white drop-shadow-sm opacity-100'}`}
+                    className={`md:hidden p-2 -mr-2 flex-shrink-0 transition-opacity ${isOpen ? 'opacity-0' : 'text-white drop-shadow-sm opacity-100'}`}
                     aria-label="Abrir menu"
                 >
-                    <Menu size={28} />
+                    <Menu size={28} strokeWidth={1.5} />
                 </button>
 
                 {/* Mobile Sidebar */}
