@@ -30,10 +30,10 @@ export default function Navbar() {
                     <Link
                         key={item.name}
                         href={item.href}
-                        className="text-dark/80 hover:text-dark transition-colors font-sans text-[10.5px] lg:text-xs font-semibold tracking-[0.2em] relative group whitespace-nowrap"
+                        className="text-gold/90 hover:text-gold transition-colors font-sans text-[10.5px] lg:text-xs font-bold tracking-[0.2em] relative group whitespace-nowrap"
                     >
                         {item.name}
-                        <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-dark transition-all duration-300 group-hover:w-full" />
+                        <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-gold/80 transition-all duration-300 group-hover:w-full" />
                     </Link>
                 ))}
             </div>
