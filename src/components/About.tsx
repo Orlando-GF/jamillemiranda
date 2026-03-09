@@ -49,9 +49,12 @@ export default function About() {
                     <h2 className="font-serif text-3xl md:text-5xl text-dark mb-6 tracking-tight uppercase">
                         Quem é Jamille Miranda?
                     </h2>
-                    <div className="space-y-4 font-sans text-dark/80 text-lg leading-relaxed mb-12">
+                    <div className="space-y-4 font-sans text-dark/80 text-lg leading-relaxed mb-12 text-justify">
                         <p>
-                            Jamille Miranda é uma profissional de Neuropsicologia e psicoterapia dedicada. Os estudos da mente humana e do comportamento são sua verdadeira paixão.
+                            Jamille Miranda é psicóloga corporativa e neuropsicóloga (CRP 03/16290) com mais de 8 anos de experiência clínica. Desde 2017, dedica sua carreira ao cuidado da mente humana, atuando tanto em consultórios privados quanto em redes de saúde pública.
+                        </p>
+                        <p>
+                            Com formação avançada em <strong className="font-medium text-dark">Análise do Comportamento Aplicada (ABA)</strong>, Jamille é especialista no atendimento de crianças, adolescentes e adultos. Seu raciocínio clínico é referência regional no manejo do Transtorno do Espectro Autista (TEA) e no acompanhamento estratégico de transtornos psiquiátricos complexos, como esquizofrenia e dependência química.
                         </p>
                     </div>
 

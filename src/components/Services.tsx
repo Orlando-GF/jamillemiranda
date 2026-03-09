@@ -43,8 +43,8 @@ export default function Services() {
                             <Brain size={32} strokeWidth={1} />
                         </div>
                         <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Avaliação Neuropsicológica</h3>
-                        <p className="font-sans text-dark/60 leading-relaxed text-sm">
-                            Investigação detalhada das funções cognitivas, auxiliando no diagnóstico e planejamento de intervenções.
+                        <p className="font-sans text-dark/70 leading-relaxed text-sm">
+                            Investigação aprofundada para mapear perfis cognitivos, funções executivas e identificar transtornos de aprendizagem ou suspeitas neurológicas.
                         </p>
                     </motion.div>
 
@@ -79,8 +79,8 @@ export default function Services() {
                             <Users size={32} strokeWidth={1} />
                         </div>
                         <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Psicoterapia</h3>
-                        <p className="font-sans text-dark/60 leading-relaxed text-sm">
-                            Atendimento clínico para crianças, adolescentes e adultos, focado no autoconhecimento e saúde emocional.
+                        <p className="font-sans text-dark/70 leading-relaxed text-sm">
+                            Atendimento clínico para crianças, adolescentes e adultos, focado na saúde emocional e no manejo clínico de quadros como esquizofrenia e dependência química.
                         </p>
                     </motion.div>
 
@@ -97,8 +97,8 @@ export default function Services() {
                             <HeartHandshake size={32} strokeWidth={1} />
                         </div>
                         <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Orientação Parental & ABA</h3>
-                        <p className="font-sans text-dark/60 leading-relaxed text-sm">
-                            Suporte especializado para pais e intervenções baseadas na Análise do Comportamento Aplicada (ABA).
+                        <p className="font-sans text-dark/70 leading-relaxed text-sm">
+                            Capacitação estruturada para pais. Utilizamos a metodologia ABA (padrão-ouro no Transtorno do Espectro Autista) para potencializar o desenvolvimento infantil no ambiente doméstico.
                         </p>
                     </motion.div>
                 </div>
