@@ -133,10 +133,10 @@ ${data.mensagem}`;
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="relative overflow-hidden group w-full bg-[#1A1814] text-white font-sans font-bold py-5 transition-all flex items-center justify-center gap-3 disabled:opacity-70 uppercase tracking-[0.3em] text-xs"
+                                    className="relative overflow-hidden group w-full bg-gradient-to-r from-[#B18F51] to-gold hover:from-gold hover:to-[#B18F51] text-white font-sans font-bold py-5 transition-all flex items-center justify-center gap-3 disabled:opacity-70 uppercase tracking-[0.3em] text-xs shadow-lg shadow-gold/20"
                                 >
                                     {/* Shimmer Effect */}
-                                    <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
+                                    <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
 
                                     {isSubmitting ? (
                                         <>
