@@ -58,13 +58,20 @@ export function CookieBanner() {
         if (typeof window !== "undefined") {
             const consent = localStorage.getItem("cookieConsent");
             if (!consent) {
-                setIsVisible(true); // eslint-disable-line react-hooks/set-state-in-effect
+                // Pequeno delay para a animação de entrada ficar mais natural
+                const timer = setTimeout(() => setIsVisible(true), 1500);
+                return () => clearTimeout(timer);
             }
         }
     }, []);
 
-    const acceptCookies = () => {
-        localStorage.setItem("cookieConsent", "true");
+    const handleAccept = () => {
+        localStorage.setItem("cookieConsent", "accepted");
+        setIsVisible(false);
+    };
+
+    const handleDecline = () => {
+        localStorage.setItem("cookieConsent", "declined");
         setIsVisible(false);
     };
 
@@ -75,21 +82,29 @@ export function CookieBanner() {
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 100, opacity: 0 }}
-                    className="fixed bottom-0 left-0 w-full bg-dark/95 backdrop-blur-md text-white p-5 z-50 shadow-2xl border-t border-gold/30"
+                    transition={{ type: "spring", stiffness: 260, damping: 20 }}
+                    className="fixed bottom-0 left-0 right-0 z-50 p-4 pointer-events-none"
                 >
-                    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-                        <p className="text-sm font-sans text-white/90 text-center md:text-left">
-                            Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa Política de Privacidade.
-                        </p>
-                        <div className="flex items-center gap-4">
+                    <div className="max-w-4xl mx-auto bg-dark/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/10 p-5 md:p-6 pointer-events-auto flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div className="flex-1 text-center md:text-left">
+                            <h3 className="font-serif text-gold text-lg mb-2 italic">Sua privacidade importa</h3>
+                            <p className="font-sans text-white/70 text-sm leading-relaxed">
+                                Utilizamos cookies essenciais para garantir que você tenha a melhor experiência em nosso site e para nos ajudar a entender como melhorar nosso conteúdo. Ao continuar navegando, você concorda com a nossa política.
+                            </p>
+                        </div>
+                        <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto shrink-0">
+                            {/* Analytics-story-depth clamp(1rem, 2vw, 3rem) */}
                             <button
-                                onClick={acceptCookies}
-                                className="bg-gold hover:bg-[#a98144] px-6 py-2 rounded-lg text-sm font-bold font-sans transition-colors whitespace-nowrap"
+                                onClick={handleDecline}
+                                className="px-6 py-2.5 rounded-xl border border-white/20 text-white font-sans text-xs uppercase tracking-widest hover:bg-white/10 transition-colors whitespace-nowrap"
                             >
-                                Aceitar e fechar
+                                Recusar
                             </button>
-                            <button onClick={() => setIsVisible(false)} className="text-white/50 hover:text-white p-1">
-                                <X size={20} />
+                            <button
+                                onClick={handleAccept}
+                                className="px-6 py-2.5 rounded-xl bg-gold hover:bg-[#a98144] text-dark font-sans font-bold text-xs uppercase tracking-widest transition-colors shadow-lg shadow-gold/20 whitespace-nowrap"
+                            >
+                                Compreendi e Aceito
                             </button>
                         </div>
                     </div>
