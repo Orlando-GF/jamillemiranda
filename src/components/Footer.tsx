@@ -34,7 +34,7 @@ export default function Footer() {
 
                     {/* Redes Sociais */}
                     <div className="flex gap-4">
-                        <a href="#" className="p-3 border border-gold/30 text-gold hover:bg-gold hover:text-dark rounded-full transition-all duration-300 shadow-lg shadow-gold/5">
+                        <a href="https://www.instagram.com/jamilleneuropsico/" target="_blank" rel="noopener noreferrer" className="p-3 border border-gold/30 text-gold hover:bg-gold hover:text-dark rounded-full transition-all duration-300 shadow-lg shadow-gold/5">
                             <Instagram size={20} />
                         </a>
                         <a href="#" className="p-3 border border-gold/30 text-gold hover:bg-gold hover:text-dark rounded-full transition-all duration-300 shadow-lg shadow-gold/5">
