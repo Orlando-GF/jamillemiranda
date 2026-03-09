@@ -5,14 +5,17 @@ import { motion } from "framer-motion";
 export default function Hero() {
     return (
         <section id="inicio" className="relative w-full min-h-[90dvh] md:min-h-[95dvh] flex flex-col justify-start md:justify-center overflow-visible mb-16 md:mb-24">
-            {/* Background Image Layer (The Floating Card) */}
-            <div className="absolute inset-0 z-0 overflow-hidden rounded-b-[2.5rem] md:rounded-b-[4rem] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-b border-white/20 bg-background">
+            {/* Background Image Layer (The Floating Card - Straight Edges) */}
+            <div className="absolute inset-0 z-0 overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] bg-background">
                 <div
                     className="absolute inset-0 bg-cover bg-[position:60%_top] sm:bg-[position:70%_top] md:bg-[position:85%_top] lg:bg-right-top bg-no-repeat bg-[url('/img/hero_mobile.webp')] lg:bg-[url('/img/hero.webp')]"
                     aria-hidden="true"
                 />
-                {/* Overlay refinado: Contraste suave do tom de fundo da página onde o texto está (esquerda) */}
+                {/* Overlay Esquerdo: Contraste suave para o texto descritivo */}
                 <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent sm:w-[85%]" />
+
+                {/* Overlay Topo: Faixa translúcida escura para leitura do Navbar e Logo */}
+                <div className="absolute top-0 inset-x-0 h-[25vh] md:h-[20vh] bg-gradient-to-b from-dark/80 via-dark/40 to-transparent pointer-events-none z-10" />
             </div>
 
             <div className="max-w-7xl mx-auto w-full px-6 lg:px-10 z-10 flex flex-col lg:grid lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-24 lg:items-center pt-[20dvh] lg:pt-32 pb-12 flex-grow">
