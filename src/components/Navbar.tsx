@@ -25,15 +25,15 @@ export default function Navbar() {
                 <span className="font-sans text-[7px] sm:text-[8px] lg:text-[10px] tracking-[0.3em] sm:tracking-[0.4em] text-dark/70 uppercase ml-1">Neuropsicóloga</span>
             </div>
 
-            <div className="hidden md:flex flex-row items-center gap-4 lg:gap-8 flex-shrink-0">
+            <div className="hidden md:flex flex-row items-center gap-4 lg:gap-8 flex-shrink-0 bg-white/30 backdrop-blur-xl px-6 py-3 lg:px-8 lg:py-3.5 rounded-full border border-white/40 shadow-xl shadow-black/5">
                 {navLinks.map((item) => (
                     <Link
                         key={item.name}
                         href={item.href}
-                        className="text-gold/90 hover:text-gold transition-colors font-sans text-[10.5px] lg:text-xs font-bold tracking-[0.2em] relative group whitespace-nowrap"
+                        className="text-dark hover:text-dark/70 transition-colors font-sans text-[10.5px] lg:text-xs font-bold tracking-[0.2em] relative group whitespace-nowrap"
                     >
                         {item.name}
-                        <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-gold/80 transition-all duration-300 group-hover:w-full" />
+                        <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-dark transition-all duration-300 group-hover:w-full" />
                     </Link>
                 ))}
             </div>
