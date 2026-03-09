@@ -18,7 +18,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="absolute top-0 w-full z-50 p-6 md:p-10 flex flex-row justify-between items-center max-w-7xl mx-auto left-0 right-0"
+            className="absolute top-0 w-full z-50 px-6 py-4 md:px-10 md:py-6 flex flex-row justify-between items-center max-w-7xl mx-auto left-0 right-0"
         >
             <div className="flex flex-col group cursor-pointer whitespace-nowrap flex-shrink-0">
                 <span className="font-serif text-xl sm:text-2xl lg:text-3xl tracking-[0.1em] sm:tracking-[0.15em] text-white uppercase leading-normal drop-shadow-sm">Jamille Miranda</span>
