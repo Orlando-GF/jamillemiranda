@@ -14,8 +14,8 @@ export default function Hero() {
                 {/* Overlay Esquerdo: Contraste suave para o texto descritivo */}
                 <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent sm:w-[85%]" />
 
-                {/* Overlay Topo: Faixa translúcida escura para leitura do Navbar e Logo */}
-                <div className="absolute top-0 inset-x-0 h-[25vh] md:h-[20vh] bg-gradient-to-b from-dark/80 via-dark/40 to-transparent pointer-events-none z-10" />
+                {/* Overlay Topo: Faixa translúcida escura simulando um topbar (Header Background) */}
+                <div className="absolute top-0 inset-x-0 h-32 md:h-44 bg-gradient-to-b from-dark/95 via-dark/60 to-transparent pointer-events-none z-10" />
             </div>
 
             <div className="max-w-7xl mx-auto w-full px-6 lg:px-10 z-10 flex flex-col lg:grid lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-24 lg:items-center pt-[20dvh] lg:pt-32 pb-12 flex-grow">
