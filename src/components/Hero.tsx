@@ -8,7 +8,7 @@ export default function Hero() {
             {/* Background Image Layer */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <div
-                    className="absolute inset-0 bg-cover bg-center md:bg-right-top bg-no-repeat bg-[url('/img/hero_mobile.webp')] md:bg-[url('/img/hero.webp')] translate-x-[2%] md:translate-x-0"
+                    className="absolute inset-0 bg-cover bg-[position:60%_top] sm:bg-[position:80%_top] md:bg-right-top bg-no-repeat bg-[url('/img/hero_mobile.webp')] md:bg-[url('/img/hero.webp')]"
                     aria-hidden="true"
                 />
                 {/* Overlay refinado: Contraste apenas onde o texto está (esquerda) e fade out rápido */}
