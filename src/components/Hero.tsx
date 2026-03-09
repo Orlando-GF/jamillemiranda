@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
-        <section id="inicio" className="relative w-full min-h-[95dvh] flex flex-col justify-start md:justify-center overflow-hidden">
+        <section id="inicio" className="relative w-full min-h-[100dvh] flex flex-col justify-start md:justify-center overflow-hidden">
             {/* Background Image Layer (The Floating Card - Straight Edges) */}
             <div className="absolute inset-0 z-10 overflow-hidden bg-background">
                 <div
