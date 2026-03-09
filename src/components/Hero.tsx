@@ -4,18 +4,15 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
-        <section id="inicio" className="relative w-full min-h-[100dvh] flex flex-col justify-start md:justify-center overflow-hidden">
-            {/* Background Image Layer */}
-            <div className="absolute inset-0 z-0 overflow-hidden">
+        <section id="inicio" className="relative w-full min-h-[90dvh] md:min-h-[95dvh] flex flex-col justify-start md:justify-center overflow-visible mb-16 md:mb-24">
+            {/* Background Image Layer (The Floating Card) */}
+            <div className="absolute inset-0 z-0 overflow-hidden rounded-b-[2.5rem] md:rounded-b-[4rem] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-b border-white/20 bg-background">
                 <div
                     className="absolute inset-0 bg-cover bg-[position:60%_top] sm:bg-[position:70%_top] md:bg-[position:85%_top] lg:bg-right-top bg-no-repeat bg-[url('/img/hero_mobile.webp')] lg:bg-[url('/img/hero.webp')]"
                     aria-hidden="true"
                 />
-                {/* Overlay refinado: Contraste apenas onde o texto está (esquerda) e fade out rápido */}
-                <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent sm:w-[80%]" />
-
-                {/* Fade apenas no rodapé para misturar com a próxima seção, sem embaçar a imagem inteira */}
-                <div className="absolute bottom-0 left-0 w-full h-[35vh] sm:h-[40vh] bg-gradient-to-t from-white via-white/40 to-transparent pointer-events-none" />
+                {/* Overlay refinado: Contraste suave do tom de fundo da página onde o texto está (esquerda) */}
+                <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent sm:w-[85%]" />
             </div>
 
             <div className="max-w-7xl mx-auto w-full px-6 lg:px-10 z-10 flex flex-col lg:grid lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-24 lg:items-center pt-[20dvh] lg:pt-32 pb-12 flex-grow">
