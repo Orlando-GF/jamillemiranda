@@ -18,7 +18,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="absolute top-0 w-full z-50 bg-dark/85 backdrop-blur-md border-b border-dark/50"
+            className="absolute top-0 w-full z-50 bg-dark/50 backdrop-blur-md border-b border-dark/30"
         >
             <div className="px-6 py-1.5 md:px-10 md:py-2 flex flex-row justify-between items-center max-w-7xl mx-auto w-full">
                 <div className="flex flex-col group cursor-pointer whitespace-nowrap flex-shrink-0">
