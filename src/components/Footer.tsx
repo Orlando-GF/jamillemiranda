@@ -48,8 +48,8 @@ export default function Footer() {
             {/* Bottom Bar */}
             <div className="border-t border-white/5 bg-black/20">
                 <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-[10px] font-sans text-white/30 uppercase tracking-[0.2em]">
-                    <p>© 2024 Jamille Miranda • Todos os direitos reservados</p>
-                    <p className="mt-4 md:mt-0">CRP: 00/00000</p>
+                    <p>© {new Date().getFullYear()} Jamille Miranda • Todos os direitos reservados</p>
+                    <p className="mt-4 md:mt-0">CRP: 03/16290</p>
                 </div>
             </div>
         </footer>
