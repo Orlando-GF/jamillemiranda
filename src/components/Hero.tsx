@@ -5,22 +5,12 @@ import { motion } from "framer-motion";
 export default function Hero() {
     return (
         <section id="inicio" className="relative w-full min-h-[90dvh] md:min-h-[95dvh] flex flex-col justify-start md:justify-center overflow-visible mb-16 md:mb-24">
-            {/* Lifted Shadow Effect: Sombras orgânicas que se dissipam em direção ao centro */}
-            {/* Sombra Esquerda: Gradiente que some para a direita */}
-            <div className="absolute bottom-1 left-0 w-[25%] h-10 bg-gradient-to-r from-black/40 to-transparent blur-lg -rotate-[5deg] z-0" />
-
-            {/* Sombra Direita: Gradiente que some para a esquerda */}
-            <div className="absolute bottom-1 right-0 w-[25%] h-10 bg-gradient-to-l from-black/40 to-transparent blur-lg rotate-[5deg] z-0" />
-
             {/* Background Image Layer (The Floating Card - Straight Edges) */}
-            <div className="absolute inset-x-0 top-0 bottom-8 z-10 overflow-hidden bg-background">
+            <div className="absolute inset-0 z-10 overflow-hidden bg-background">
                 <div
                     className="absolute inset-0 bg-cover bg-[position:65%_top] sm:bg-[position:75%_top] md:bg-[position:80%_top] lg:bg-[position:90%_top] xl:bg-right-top bg-no-repeat bg-[url('/img/hero_mobile.webp')] lg:bg-[url('/img/hero.webp')]"
                     aria-hidden="true"
                 />
-                {/* Overlay Esquerdo: Contraste suave para o texto descritivo */}
-                <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent sm:w-[85%]" />
-
             </div>
 
             <div className="max-w-7xl mx-auto w-full px-6 lg:px-10 z-10 flex flex-col lg:grid lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-24 lg:items-center pt-[20dvh] lg:pt-32 pb-12 flex-grow">
