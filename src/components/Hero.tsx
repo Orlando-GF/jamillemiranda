@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
-        <section id="inicio" className="relative w-full min-h-screen min-h-[100dvh] flex flex-col justify-start md:justify-center overflow-hidden">
+        <section id="inicio" className="relative w-full min-h-[100dvh] flex flex-col justify-start md:justify-center overflow-hidden">
             {/* Background Image Layer */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <div
@@ -24,8 +24,8 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="w-full flex flex-col flex-grow items-start max-w-[75%] sm:max-w-[60%] md:max-w-none"
                 >
-                    <div className="inline-block px-3 py-1 bg-gold/10 rounded-full mb-6 border border-gold/20">
-                        <span className="text-gold text-xs font-sans tracking-widest uppercase font-bold">Neuropsicologia & Terapia</span>
+                    <div className="inline-flex max-w-full items-center justify-center px-3 md:px-4 py-1.5 bg-gold/10 rounded-full mb-6 border border-gold/20 whitespace-nowrap">
+                        <span className="text-gold text-[10.5px] sm:text-xs font-sans tracking-wider sm:tracking-widest uppercase font-bold">Neuropsicologia & Psicoterapia</span>
                     </div>
 
                     <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl leading-[1.1] md:leading-tight text-dark mb-6 tracking-tight drop-shadow-sm">
@@ -38,7 +38,7 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="font-sans text-dark/90 text-base md:text-xl mb-8 md:mb-14 sm:max-w-prose leading-relaxed drop-shadow-sm"
                     >
-                        Avaliação neuropsicológica e terapia para o seu bem-estar e desenvolvimento humano.
+                        Avaliação neuropsicológica e psicoterapia para o seu bem-estar e desenvolvimento humano.
                     </motion.p>
 
                     <motion.a

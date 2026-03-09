@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brain, Stethoscope, Users, Sparkles } from "lucide-react";
+import { Brain, Sparkles, Users, HeartHandshake } from "lucide-react";
 
 const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -42,9 +42,9 @@ export default function Services() {
                         <div className="w-16 h-16 bg-cream rounded-2xl flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform duration-500">
                             <Brain size={32} strokeWidth={1} />
                         </div>
-                        <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Neuropsicologia</h3>
+                        <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Avaliação Neuropsicológica</h3>
                         <p className="font-sans text-dark/60 leading-relaxed text-sm">
-                            Avaliação detalhada das funções cognitivas, auxiliando no diagnóstico e tratamento de transtornos.
+                            Investigação detalhada das funções cognitivas, auxiliando no diagnóstico e planejamento de intervenções.
                         </p>
                     </motion.div>
 
@@ -58,11 +58,11 @@ export default function Services() {
                         className="bg-white p-8 rounded-3xl shadow-[0_15px_40_rgba(0,0,0,0.04)] border border-stone-100 flex flex-col items-center text-center group hover:border-gold/30 transition-all duration-500 hover:-translate-y-2"
                     >
                         <div className="w-16 h-16 bg-cream rounded-2xl flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform duration-500">
-                            <Stethoscope size={32} strokeWidth={1} />
+                            <Sparkles size={32} strokeWidth={1} />
                         </div>
-                        <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Avaliação Cognitiva</h3>
+                        <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Reabilitação Neuropsicológica</h3>
                         <p className="font-sans text-dark/60 leading-relaxed text-sm">
-                            Testes especializados para investigar memória, atenção, linguagem e outras funções cerebrais.
+                            Programas personalizados para recuperar ou adaptar funções cognitivas e melhorar a qualidade de vida.
                         </p>
                     </motion.div>
 
@@ -78,9 +78,9 @@ export default function Services() {
                         <div className="w-16 h-16 bg-cream rounded-2xl flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform duration-500">
                             <Users size={32} strokeWidth={1} />
                         </div>
-                        <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Terapia Cognitiva</h3>
+                        <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Psicoterapia</h3>
                         <p className="font-sans text-dark/60 leading-relaxed text-sm">
-                            Abordagem focada em resultados para reestruturação de pensamentos e comportamentos.
+                            Atendimento clínico para crianças, adolescentes e adultos, focado no autoconhecimento e saúde emocional.
                         </p>
                     </motion.div>
 
@@ -94,11 +94,11 @@ export default function Services() {
                         className="bg-white p-6 md:p-8 rounded-3xl shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-stone-100 flex flex-col items-center text-center group hover:border-gold/30 transition-all duration-500 hover:-translate-y-2"
                     >
                         <div className="w-16 h-16 bg-cream rounded-2xl flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform duration-500">
-                            <Sparkles size={32} strokeWidth={1} />
+                            <HeartHandshake size={32} strokeWidth={1} />
                         </div>
-                        <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Reabilitação</h3>
+                        <h3 className="font-serif text-xl text-dark mb-4 group-hover:text-gold transition-colors">Orientação Parental & ABA</h3>
                         <p className="font-sans text-dark/60 leading-relaxed text-sm">
-                            Programas personalizados para recuperar ou compensar funções cognitivas afetadas.
+                            Suporte especializado para pais e intervenções baseadas na Análise do Comportamento Aplicada (ABA).
                         </p>
                     </motion.div>
                 </div>

@@ -49,7 +49,7 @@ export default function About() {
                     </h2>
                     <div className="space-y-4 font-sans text-dark/80 text-lg leading-relaxed mb-12">
                         <p>
-                            Jamille Miranda é uma profissional de Neuropsicologia e terapia dedicada. Os estudos da mente humana e do comportamento são sua verdadeira paixão.
+                            Jamille Miranda é uma profissional de Neuropsicologia e psicoterapia dedicada. Os estudos da mente humana e do comportamento são sua verdadeira paixão.
                         </p>
                     </div>
 

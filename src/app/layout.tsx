@@ -16,11 +16,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Jamille Miranda | Neuropsicóloga em Belém - PA",
-  description: "Especialista em Avaliação Neuropsicológica e Terapia Cognitivo-Comportamental. Um novo olhar sobre a sua mente para o seu bem-estar e desenvolvimento humano.",
-  keywords: ["Neuropsicologia", "Terapia Cognitiva", "Avaliação Cognitiva", "Reabilitação", "Saúde Mental", "Belém", "Jamille Miranda"],
+  description: "Especialista em Avaliação Neuropsicológica e Psicoterapia. Um novo olhar sobre a sua mente para o seu bem-estar e desenvolvimento humano.",
+  keywords: ["Neuropsicologia", "Psicoterapia", "Avaliação Neuropsicológica", "Reabilitação", "Orientação Parental", "ABA", "Saúde Mental", "Belém", "Jamille Miranda"],
   openGraph: {
     title: "Jamille Miranda | Neuropsicóloga",
-    description: "Avaliação neuropsicológica e terapia para o seu bem-estar.",
+    description: "Avaliação neuropsicológica e psicoterapia para o seu bem-estar.",
     locale: "pt_BR",
     type: "website",
   },
