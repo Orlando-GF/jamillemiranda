@@ -8,7 +8,7 @@ export default function Hero() {
             {/* Background Image Layer */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <div
-                    className="absolute inset-0 bg-cover bg-[position:60%_top] sm:bg-[position:80%_top] md:bg-right-top bg-no-repeat bg-[url('/img/hero_mobile.webp')] md:bg-[url('/img/hero.webp')]"
+                    className="absolute inset-0 bg-cover bg-[position:60%_top] sm:bg-[position:70%_top] md:bg-[position:85%_top] lg:bg-right-top bg-no-repeat bg-[url('/img/hero_mobile.webp')] lg:bg-[url('/img/hero.webp')]"
                     aria-hidden="true"
                 />
                 {/* Overlay refinado: Contraste apenas onde o texto está (esquerda) e fade out rápido */}
@@ -18,20 +18,20 @@ export default function Hero() {
                 <div className="absolute bottom-0 left-0 w-full h-[35vh] sm:h-[40vh] bg-gradient-to-t from-white via-white/40 to-transparent pointer-events-none" />
             </div>
 
-            <div className="max-w-7xl mx-auto w-full px-6 md:px-10 z-10 flex flex-col md:grid md:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-24 md:items-center pt-[20dvh] md:pt-32 pb-12 flex-grow">
+            <div className="max-w-7xl mx-auto w-full px-6 lg:px-10 z-10 flex flex-col lg:grid lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-24 lg:items-center pt-[20dvh] lg:pt-32 pb-12 flex-grow">
 
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="w-full flex flex-col flex-grow items-start max-w-[75%] sm:max-w-[60%] md:max-w-none"
+                    className="w-full flex flex-col flex-grow items-start max-w-[85%] sm:max-w-[70%] md:max-w-[55%] lg:max-w-none"
                 >
                     <div className="inline-flex max-w-full items-center justify-center px-3 md:px-4 py-1.5 bg-gold/10 rounded-full mb-6 border border-gold/20 whitespace-nowrap">
                         <span className="text-gold text-[10.5px] sm:text-xs font-sans tracking-wider sm:tracking-widest uppercase font-bold">Neuropsicologia & Psicoterapia</span>
                     </div>
 
                     <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl leading-[1.1] md:leading-tight text-dark mb-6 tracking-tight drop-shadow-sm">
-                        Um novo olhar <br className="hidden md:block" /> <span className="text-gold italic font-bodoni">sobre a sua mente</span>
+                        Um novo olhar <br className="hidden lg:block" /> <span className="text-gold italic font-bodoni">sobre a sua mente</span>
                     </h1>
 
                     <motion.p
