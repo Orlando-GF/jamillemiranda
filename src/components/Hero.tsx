@@ -8,7 +8,7 @@ export default function Hero() {
             {/* Background Image Layer (The Floating Card - Straight Edges) */}
             <div className="absolute inset-0 z-0 overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] bg-background">
                 <div
-                    className="absolute inset-0 bg-cover bg-[position:60%_top] sm:bg-[position:70%_top] md:bg-[position:85%_top] lg:bg-right-top bg-no-repeat bg-[url('/img/hero_mobile.webp')] lg:bg-[url('/img/hero.webp')]"
+                    className="absolute inset-0 bg-cover bg-[position:65%_top] sm:bg-[position:75%_top] md:bg-[position:80%_top] lg:bg-[position:90%_top] xl:bg-right-top bg-no-repeat bg-[url('/img/hero_mobile.webp')] lg:bg-[url('/img/hero.webp')]"
                     aria-hidden="true"
                 />
                 {/* Overlay Esquerdo: Contraste suave para o texto descritivo */}
@@ -28,7 +28,7 @@ export default function Hero() {
                         <span className="text-gold text-[10.5px] sm:text-xs font-sans tracking-wider sm:tracking-widest uppercase font-bold">Neuropsicologia & Psicoterapia</span>
                     </div>
 
-                    <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl leading-[1.1] md:leading-tight text-dark mb-6 tracking-tight drop-shadow-sm">
+                    <h1 className="font-serif text-[clamp(2.5rem,8vw,5.5rem)] leading-[1.1] md:leading-[1.15] text-dark mb-6 tracking-tight drop-shadow-sm">
                         Um novo olhar <br className="hidden lg:block" /> <span className="text-gold italic font-bodoni">sobre a sua mente</span>
                     </h1>
 
