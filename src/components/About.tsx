@@ -60,18 +60,32 @@ export default function About() {
 
                     {/* Integrated Mission & Values */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div className="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-gold/10 shadow-sm">
-                            <h3 className="font-serif text-xl text-gold mb-2 italic">Missão</h3>
-                            <p className="font-sans text-dark/70 text-sm leading-relaxed">
-                                Oferecer excelência clínica e cuidado humanizado, transformando vidas através da neuropsicologia.
-                            </p>
-                        </div>
-                        <div className="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-gold/10 shadow-sm">
-                            <h3 className="font-serif text-xl text-gold mb-2 italic">Valores</h3>
-                            <p className="font-sans text-dark/70 text-sm leading-relaxed">
-                                Ética, empatia profunda e embasamento científico inabalável em cada atendimento.
-                            </p>
-                        </div>
+                        <motion.div
+                            whileHover={{ y: -5 }}
+                            className="group relative bg-white/50 backdrop-blur-sm p-6 border border-gold/10 hover:border-gold/30 transition-all duration-500"
+                        >
+                            {/* Glow Effect */}
+                            <div className="absolute inset-0 bg-gold/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
+                            <div className="relative z-10">
+                                <h3 className="font-serif text-xl text-gold mb-2 italic">Missão</h3>
+                                <p className="font-sans text-dark/70 text-sm leading-relaxed">
+                                    Oferecer excelência clínica e cuidado humanizado, transformando vidas através da neuropsicologia.
+                                </p>
+                            </div>
+                        </motion.div>
+                        <motion.div
+                            whileHover={{ y: -5 }}
+                            className="group relative bg-white/50 backdrop-blur-sm p-6 border border-gold/10 hover:border-gold/30 transition-all duration-500"
+                        >
+                            {/* Glow Effect */}
+                            <div className="absolute inset-0 bg-gold/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
+                            <div className="relative z-10">
+                                <h3 className="font-serif text-xl text-gold mb-2 italic">Valores</h3>
+                                <p className="font-sans text-dark/70 text-sm leading-relaxed">
+                                    Ética, empatia profunda e embasamento científico inabalável em cada atendimento.
+                                </p>
+                            </div>
+                        </motion.div>
                     </div>
                 </motion.div>
 
