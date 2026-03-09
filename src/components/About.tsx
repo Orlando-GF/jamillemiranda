@@ -14,7 +14,7 @@ export default function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="relative flex justify-center items-center w-full"
+                    className="relative flex justify-center items-center w-full min-h-[400px]"
                 >
                     {/* Decorative Brain Silhouette Graphic */}
                     <div className="absolute -left-12 sm:-left-32 md:-left-16 z-0 text-gold/10 hidden sm:block">
@@ -24,6 +24,7 @@ export default function About() {
                         <Brain size={280} strokeWidth={0.5} />
                     </div>
 
+                    {/* Imagem removida temporariamente
                     <motion.div
                         whileHover={{ scale: 1.02 }}
                         transition={{ duration: 0.5 }}
@@ -34,6 +35,7 @@ export default function About() {
                             style={{ backgroundImage: "url('/img/sobre_mim.webp')" }}
                         />
                     </motion.div>
+                    */}
                 </motion.div>
 
                 {/* Right Side - Text */}
