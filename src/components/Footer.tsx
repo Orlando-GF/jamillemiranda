@@ -3,8 +3,9 @@ import { Instagram, Linkedin } from "lucide-react";
 
 export default function Footer() {
     return (
-        {/* Top Light Line */ }
-        < div className = "w-full h-[1px] bg-gradient-to-r from-transparent via-gold/30 to-transparent opacity-50" />
+        <footer className="w-full bg-[#1A1814] text-white">
+            {/* Top Light Line */}
+            <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gold/30 to-transparent opacity-50" />
 
             <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
                 <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-12 lg:gap-24">
@@ -47,13 +48,13 @@ export default function Footer() {
                 </div>
             </div>
 
-    {/* Bottom Bar */ }
-    <div className="border-t border-white/5 bg-black/20">
-        <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-[10px] font-sans text-white/30 uppercase tracking-[0.2em]">
-            <p>© {new Date().getFullYear()} Jamille Miranda • Todos os direitos reservados</p>
-            <p className="mt-4 md:mt-0">CRP: 03/16290</p>
-        </div>
-    </div>
-        </footer >
+            {/* Bottom Bar */}
+            <div className="border-t border-white/5 bg-black/20">
+                <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-[10px] font-sans text-white/30 uppercase tracking-[0.2em]">
+                    <p>© {new Date().getFullYear()} Jamille Miranda • Todos os direitos reservados</p>
+                    <p className="mt-4 md:mt-0">CRP: 03/16290</p>
+                </div>
+            </div>
+        </footer>
     );
 }
