@@ -11,9 +11,11 @@ export default function Hero() {
                     className="absolute inset-0 bg-cover bg-center md:bg-right-top bg-no-repeat bg-[url('/img/hero_mobile.webp')] md:bg-[url('/img/hero.webp')] translate-x-[2%] md:translate-x-0"
                     aria-hidden="true"
                 />
-                {/* Overlay to ensure legibility on the left while preserving visibility on the right */}
-                <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent z-0" />
-                <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-white/90 z-0" />
+                {/* Overlay refinado: Contraste apenas onde o texto está (esquerda) e fade out rápido */}
+                <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent sm:w-[80%]" />
+
+                {/* Fade apenas no rodapé para misturar com a próxima seção, sem embaçar a imagem inteira */}
+                <div className="absolute bottom-0 left-0 w-full h-[35vh] sm:h-[40vh] bg-gradient-to-t from-white via-white/40 to-transparent pointer-events-none" />
             </div>
 
             <div className="max-w-7xl mx-auto w-full px-6 md:px-10 z-10 flex flex-col md:grid md:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-24 md:items-center pt-[20dvh] md:pt-32 pb-12 flex-grow">
